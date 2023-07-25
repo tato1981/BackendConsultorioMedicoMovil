@@ -1,0 +1,59 @@
+
+@api = http://localhost:8000/admins
+
+
+GET {{api}}
+
+###
+GET {{api}}/2
+
+###
+
+GET {{api}}
+Content-Type: application/json
+
+{      
+    "email": "raul@gmail.com",
+    "password": "123456"
+    
+}
+
+###
+GET {{api}}/count
+
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+   
+    "nombre": "alba",
+    "apellidos": "obando",
+    "documento": "38858136",
+    "email": "alba@gmail.com",
+    "telefono": "3145716188",
+    "password": "123456"
+  }
+
+###
+
+DELETE {{api}}/11
+
+
+###
+
+PUT {{api}}/8
+Content-Type: application/json
+
+{
+   
+    "nombre": "alba",
+    "apellidos": "Riascos",
+    "documento": "633534353",
+    "email": "marina@gmail.com",
+    "telefono": "3145716188",
+    "password": "123456"
+  }
+
+

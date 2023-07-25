@@ -1,0 +1,6 @@
+{
+    "presets": [
+        "@babel/preset-env"  //lee el codigo y co convierte de js a js moderno
+    ]
+    //"plugins": ["@babel/plugin-transform-runtime"]
+}
