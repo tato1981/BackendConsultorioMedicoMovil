@@ -17,19 +17,7 @@ export const getAdmin = async (req, res) => {
     res.json(rows[0])
 }
 
-//obtiene un registro 
-export const adminLogin = async (req, res) => {
-    const connection = await connect()
-    const result = await connection.query('SELECT * FROM admins WHERE email = ? AND password = ?',[
-        email,
-        password
-    ])
 
-    
-    console.log(result)
-    res.json(result)
-    
-}
 
 
 

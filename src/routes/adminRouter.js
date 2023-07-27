@@ -1,5 +1,5 @@
 import {Router} from 'express'; 
-import { getAdmins, getAdmin, adminLogin, getAdminCount, createAdmin, deleteAdmin, updateAdmin } from '../controllers/AdminController';
+import { getAdmins, getAdmin,  getAdminCount, createAdmin, deleteAdmin, updateAdmin } from '../controllers/AdminController';
 
 const router = Router();
 
@@ -40,20 +40,6 @@ router.get('/admins', getAdmins)
 //obtiene un admin registrado
 router.get('/admins/:id', getAdmin)
 
-
-/**
- * @swagger
- * /admins/:id:
- *   get:
- *      summary: obtiene un admin.
- *      tags : [Admins]
- *       
- * 
- *     
- */
-
-//obtiene un admin registrado
-router.get('/admins', adminLogin)
 
 
 
